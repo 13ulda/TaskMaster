@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TaskMaster - Sistema de organización de tareas, notas, calendario y metas.">
+    <title>TaskMaster | Sistema de Organización</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#inicio" class="brand" aria-label="TaskMaster - Inicio"><img src="img/logo-taskmaster.png"
+                    alt="Logo de TaskMaster"></a>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#proposito">Propósito</a></li>
+                <li><a href="#objetivos">Objetivos</a></li>
+                <li><a href="#alcance">Alcance</a></li>
+                <li><a href="#caracteristicas">Características</a></li>
+                <li><a href="#diseno">Diseño</a></li>
+                <li><a href="#tecnologias">Tecnologías</a></li>
+                <li><a href="#escalabilidad">Escalabilidad</a></li>
+                <li><a href="#desarrollador">Desarrollador</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="container hero-grid">
+                <div>
+                    <span class="eyebrow">PROYECTO DE SISTEMA INFORMÁTICO · 2026</span>
+                    <h1>Organiza tu tiempo.<br><span>Alcanza tus metas.</span></h1>
+                    <p class="lead"><b>TaskMaster</b> es un sistema de organización desarrollado para facilitar la
+                        planificación y el seguimiento de actividades personales y académicas desde un mismo lugar.</p>
+                    <div class="buttons"><a class="btn primary" href="#proposito">Conocer el proyecto</a><a
+                            class="btn outline" href="#caracteristicas">Ver características</a></div>
+                    <div class="chips"><span>Java</span><span>Java Swing</span><span>MySQL</span><span>JDBC</span></div>
+                </div>
+                <div class="mockup">
+                    <div class="dots">● ● ●</div>
+                    <div class="mockbody">
+                        <aside><b>✓</b><i></i><i></i><i></i><i></i></aside>
+                        <article>
+                            <h3>Mi organización</h3>
+                            <div class="stats">
+                                <div><b>12</b><small>Tareas</small></div>
+                                <div><b>4</b><small>En proceso</small></div>
+                                <div><b>8</b><small>Completadas</small></div>
+                            </div>
+                            <p class="task">● Proyecto de programación</p>
+                            <p class="task">● Estudiar para examen</p>
+                            <p class="task">● Entregar documentación</p>
+                        </article>
+                    </div><small>Vista representativa de TaskMaster</small>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="proposito">
+            <div class="container">
+                <div class="heading"><span>01</span>
+                    <div><em>PROPÓSITO DEL PROYECTO</em>
+                        <h2>Una herramienta para organizar en un solo lugar</h2>
+                    </div>
+                </div>
+                <div class="two">
+                    <article class="card">
+                        <p>TaskMaster tiene como propósito desarrollar un sistema de escritorio que facilite la
+                            organización y administración de actividades personales y académicas. Permite registrar
+                            tareas, consultar actividades mediante un calendario, escribir notas y establecer metas
+                            personales.</p>
+                        <p>El proyecto está pensado principalmente para estudiantes y personas que necesitan administrar
+                            diferentes actividades y llevar un control de sus pendientes. La información se almacena en
+                            MySQL para conservar los registros.</p>
+                    </article>
+                    <article class="darkcard"><b class="icon">!</b>
+                        <h3>Problema identificado</h3>
+                        <p>Las actividades pueden encontrarse dispersas entre cuadernos, aplicaciones, notas del
+                            teléfono o recordatorios. TaskMaster busca centralizar esa información para facilitar la
+                            planificación y el seguimiento.</p>
+                    </article>
+                </div>
+                <div class="benefits">
+                    <article><b>01</b>
+                        <h3>Centralización</h3>
+                        <p>Tareas, notas, metas y fechas en un mismo sistema.</p>
+                    </article>
+                    <article><b>02</b>
+                        <h3>Organización</h3>
+                        <p>Información estructurada y asociada a cada usuario.</p>
+                    </article>
+                    <article><b>03</b>
+                        <h3>Seguimiento</h3>
+                        <p>Control del estado de tareas y progreso de metas.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section soft" id="objetivos">
+            <div class="container">
+                <div class="heading"><span>02</span>
+                    <div><em>OBJETIVOS</em>
+                        <h2>¿Qué busca lograr TaskMaster?</h2>
+                    </div>
+                </div>
+                <article class="card general"><b>◎</b>
+                    <div><em>OBJETIVO GENERAL</em>
+                        <p>Desarrollar un Sistema de Organización de Tareas que permita a los usuarios administrar,
+                            planificar y dar seguimiento a sus actividades personales, académicas y laborales mediante
+                            una plataforma digital eficiente, intuitiva y segura, contribuyendo a mejorar la
+                            productividad y la gestión del tiempo.</p>
+                    </div>
+                </article>
+                <div class="grid4">
+                    <article><b>01</b>
+                        <h3>Interfaz amigable</h3>
+                        <p>Diseñar una interfaz gráfica que facilite la interacción y proporcione una experiencia
+                            sencilla y eficiente.</p>
+                    </article>
+                    <article><b>02</b>
+                        <h3>Autenticación</h3>
+                        <p>Implementar inicio de sesión y control de acceso para mantener asociada la información con
+                            cada cuenta.</p>
+                    </article>
+                    <article><b>03</b>
+                        <h3>Gestión de tareas</h3>
+                        <p>Permitir crear, consultar, modificar y eliminar tareas según las necesidades del usuario.</p>
+                    </article>
+                    <article><b>04</b>
+                        <h3>Organización integral</h3>
+                        <p>Integrar calendario, notas y metas para complementar la planificación.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="alcance">
+            <div class="container">
+                <div class="heading"><span>03</span>
+                    <div><em>ALCANCE</em>
+                        <h2>Funciones contempladas por el sistema</h2>
+                    </div>
+                </div>
+                <div class="scope">
+                    <div>
+                        <article><b>01</b>
+                            <div>
+                                <h3>Inicio de sesión</h3>
+                                <p>Ingreso mediante datos registrados y asociación de información con la cuenta.</p>
+                            </div>
+                        </article>
+                        <article><b>02</b>
+                            <div>
+                                <h3>Inicio</h3>
+                                <p>Pantalla principal desde donde se accede a los módulos.</p>
+                            </div>
+                        </article>
+                        <article><b>03</b>
+                            <div>
+                                <h3>Tareas</h3>
+                                <p>Registrar, consultar, actualizar y eliminar tareas con título, descripción, fecha,
+                                    prioridad y estado.</p>
+                            </div>
+                        </article>
+                        <article><b>04</b>
+                            <div>
+                                <h3>Calendario</h3>
+                                <p>Visualizar y organizar actividades de acuerdo con sus fechas.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div>
+                        <article><b>05</b>
+                            <div>
+                                <h3>Notas</h3>
+                                <p>Crear, guardar, consultar y eliminar información personal importante.</p>
+                            </div>
+                        </article>
+                        <article><b>06</b>
+                            <div>
+                                <h3>Metas</h3>
+                                <p>Registrar objetivos, descripción, fecha límite y porcentaje de progreso.</p>
+                            </div>
+                        </article>
+                        <article><b>07</b>
+                            <div>
+                                <h3>Usuario</h3>
+                                <p>Consultar y administrar la información relacionada con la cuenta.</p>
+                            </div>
+                        </article>
+                        <article><b>08</b>
+                            <div>
+                                <h3>Base de datos</h3>
+                                <p>Conservar registros mediante MySQL y permitir operaciones CRUD.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="limit"><b>Límite de la versión actual:</b> TaskMaster está desarrollado como un sistema de
+                    escritorio. Su estructura permite agregar posteriormente estadísticas, recordatorios, historial de
+                    actividades y otras herramientas.</div>
+            </div>
+        </section>
+
+        <section class="section soft" id="caracteristicas">
+            <div class="container">
+                <div class="heading"><span>04</span>
+                    <div><em>CARACTERÍSTICAS</em>
+                        <h2>Herramientas principales de TaskMaster</h2>
+                    </div>
+                </div>
+                <div class="features">
+                    <article><b>✓</b>
+                        <h3>Tareas</h3>
+                        <p>Gestiona actividades con prioridad, fecha límite, descripción y estados pendiente, en proceso
+                            o completada.</p>
+                    </article>
+                    <article><b>▦</b>
+                        <h3>Calendario</h3>
+                        <p>Consulta las fechas de las actividades y facilita la planificación de pendientes.</p>
+                    </article>
+                    <article><b>✎</b>
+                        <h3>Notas</h3>
+                        <p>Guarda recordatorios, ideas e información relacionada con tareas.</p>
+                    </article>
+                    <article><b>◎</b>
+                        <h3>Metas</h3>
+                        <p>Define objetivos, fechas límite y porcentajes de progreso.</p>
+                    </article>
+                    <article><b>♙</b>
+                        <h3>Usuario</h3>
+                        <p>Consulta y administra la información básica de la cuenta.</p>
+                    </article>
+                    <article><b>⌘</b>
+                        <h3>Base de datos</h3>
+                        <p>Java se comunica con MySQL mediante JDBC para almacenar y consultar información.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="diseno">
+            <div class="container">
+                <div class="heading"><span>05</span>
+                    <div><em>DISEÑO DEL PROYECTO</em>
+                        <h2>Arquitectura, UML, flujo y prototipo</h2>
+                    </div>
+                </div>
+                <div class="architecture">
+                    <div><small>01 · INTERFAZ</small>
+                        <h3>Java Swing</h3>
+                        <p>Interacción visual con los módulos.</p>
+                    </div><strong>↓</strong>
+                    <div><small>02 · LÓGICA</small>
+                        <h3>Java + POO</h3>
+                        <p>Procesa registrar, consultar, modificar y eliminar.</p>
+                    </div><strong>↓</strong>
+                    <div><small>03 · CONEXIÓN</small>
+                        <h3>JDBC</h3>
+                        <p>Comunicación entre Java y la base de datos.</p>
+                    </div><strong>↓</strong>
+                    <div><small>04 · DATOS</small>
+                        <h3>MySQL</h3>
+                        <p>Almacena permanentemente los registros.</p>
+                    </div>
+                </div>
+                <div class="docs design-docs">
+                    <article>
+                        <img src="img/dercas-image9.png" alt="Modelo entidad-relación de la base de datos TaskMaster"
+                            class="design-image">
+                        <h3>Modelo de base de datos</h3>
+                        <p>Modelo Entidad-Relación utilizado para representar la estructura de datos.</p>
+                    </article>
+                    <article>
+                        <div class="uml-images">
+                            <img src="img/dercas-image5.png" alt="Diagrama UML de casos de uso de TaskMaster"
+                                class="design-image">
+                            <img src="img/dercas-image8.png" alt="Diagrama UML de clases de TaskMaster"
+                                class="design-image">
+                        </div>
+                        <h3>Diagrama UML</h3>
+                        <p>Representación de los casos de uso y la estructura de clases del sistema.</p>
+                    </article>
+                    <article>
+                        <img src="img/dercas-image6.png"
+                            alt="Diagrama de flujo y arquitectura de funcionamiento de TaskMaster" class="design-image">
+                        <h3>Diagrama de flujo</h3>
+                        <p>Representa visualmente el flujo general de las operaciones del sistema.</p>
+                    </article>
+                    <article>
+                        <img src="img/dercas-image12.png" alt="Prototipo de la interfaz principal de TaskMaster"
+                            class="design-image prototype-image">
+                        <h3>Prototipo</h3>
+                        <p>Vista de referencia de la interfaz principal y sus módulos.</p>
+                    </article>
+                </div>
+                <h3 class="gallery-title">Capturas del sistema</h3>
+                <div class="gallery">
+                    <figure><img src="img/dercas-image16.png" alt="Inicio de sesión de TaskMaster"
+                            style="width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:10px;display:block;">
+                        <figcaption>Inicio de sesión</figcaption>
+                    </figure>
+                    <figure><img src="img/dercas-image4.png" alt="Registro de usuario de TaskMaster"
+                            style="width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:10px;display:block;">
+                        <figcaption>Registro de usuario</figcaption>
+                    </figure>
+                    <figure><img src="img/dercas-image12.png" alt="Pantalla principal de TaskMaster"
+                            style="width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:10px;display:block;">
+                        <figcaption>Pantalla principal</figcaption>
+                    </figure>
+                    <figure><img src="img/dercas-image15.png" alt="Módulo de tareas de TaskMaster"
+                            style="width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:10px;display:block;">
+                        <figcaption>Módulo de tareas</figcaption>
+                    </figure>
+                    <figure><img src="img/dercas-image18.png" alt="Calendario de TaskMaster"
+                            style="width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:10px;display:block;">
+                        <figcaption>Calendario</figcaption>
+                    </figure>
+                    <figure><img src="img/dercas-image3.png" alt="Módulo de notas de TaskMaster"
+                            style="width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:10px;display:block;">
+                        <figcaption>Notas</figcaption>
+                    </figure>
+                    <figure><img src="img/dercas-image10.png" alt="Módulo de metas de TaskMaster"
+                            style="width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:10px;display:block;">
+                        <figcaption>Metas</figcaption>
+                    </figure>
+                    <figure><img src="img/dercas-image13.png" alt="Módulo de usuario de TaskMaster"
+                            style="width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:10px;display:block;">
+                        <figcaption>Usuario</figcaption>
+                    </figure>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="section soft" id="tecnologias">
+            <div class="container">
+                <div class="heading"><span>06</span>
+                    <div><em>TECNOLOGÍAS UTILIZADAS</em>
+                        <h2>Herramientas del proyecto</h2>
+                    </div>
+                </div>
+                <div class="tech">
+                    <article><b>JAVA</b><span>Lenguaje</span></article>
+                    <article><b>SWING</b><span>Interfaz gráfica</span></article>
+                    <article><b>NETBEANS</b><span>IDE</span></article>
+                    <article><b>MYSQL</b><span>Base de datos</span></article>
+                    <article><b>JDBC</b><span>Conexión</span></article>
+                </div>
+                <p class="muted note">La página web utiliza HTML, CSS y JavaScript únicamente para presentar el proyecto
+                    en Internet; el sistema informático documentado utiliza Java, Java Swing, MySQL y JDBC.</p>
+            </div>
+        </section>
+
+        <section class="section" id="escalabilidad">
+            <div class="container">
+                <div class="heading"><span>07</span>
+                    <div><em>ESCALABILIDAD</em>
+                        <h2>Un proyecto preparado para crecer</h2>
+                    </div>
+                </div>
+                <div class="two">
+                    <article class="card">
+                        <p>TaskMaster ha sido desarrollado considerando la posibilidad de crecimiento y mejora continua.
+                            La arquitectura modular permite incorporar nuevas funcionalidades sin modificar
+                            completamente los módulos existentes.</p>
+                        <p>Entre las ampliaciones contempladas se encuentran recordatorios automáticos, notificaciones,
+                            estadísticas de productividad, historial de actividades, categorías personalizadas,
+                            sincronización con servicios en línea, generación de reportes y seguimiento más detallado de
+                            metas.</p>
+                    </article>
+                    <div class="darkcard future">
+                        <p>01 · <span>Recordatorios y notificaciones</span></p>
+                        <p>02 · <span>Estadísticas de productividad</span></p>
+                        <p>03 · <span>Historial de actividades</span></p>
+                        <p>04 · <span>Reportes y categorías</span></p>
+                        <p>05 · <span>Sincronización en línea</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section soft" id="desarrollador">
+            <div class="container">
+                <div class="heading"><span>08</span>
+                    <div><em>DESARROLLADOR</em>
+                        <h2>Información del proyecto</h2>
+                    </div>
+                </div>
+                <div class="developer">
+                    <div class="avatar">UY</div>
+                    <div><em>AUTORA</em>
+                        <h3>Ulda Yadira Velásquez Zacarías</h3>
+                        <p><b>Establecimiento:</b> Escuela “Marion G. Bock”</p>
+                        <p><b>Carrera:</b> 6°. Perito en Desarrollo de Contenido Digital y Software</p>
+                        <p><b>Ciclo escolar:</b> 2026</p>
+                        <p><b>Proyecto:</b> TaskMaster — Sistema de Organización de Tareas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="closing">
+            <div class="container"><em>TASKMASTER</em>
+                <h2>Organización, planificación y seguimiento en un solo lugar.</h2>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container"><b>©copyright | TaskMaster</b> | Sistema de Organización de Tareas | Escuela “Marion G. Bock” | 2026
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
